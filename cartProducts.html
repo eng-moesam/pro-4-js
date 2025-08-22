@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Products</title>
+  <!-- bootstrap start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- bootstrap end -->
+  <!-- font awsome start -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- font awsome end -->
+  <!-- start google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- end google font -->
+  <!-- style css start -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- style css end -->
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-01.png" alt="" class="img-fluid">
+      </a>
+       <div class="ms-auto d-flex align-items-center">
+      <a href="#" id="logout" class="mx-2 btn btn-outline-danger rounded-pill order-2">Log Out</a>
+      <div id="user_info" class="ms-auto">
+        <a href="#" id="user" class="text-uppercase text-black text-decoration-none order-1 mx-2"></a>
+      </div>
+
+      <div class="d-flex align-items-center  d-none">
+        <div class="cart-wrapper me-4">
+          <div class="cart-icon position-relative">
+            <i class="fas fa-cart-shopping text-dark fs-3"></i>
+            <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+            <div class="carts_products">
+              <div class="cart-items"></div>
+              <a href="cartsproducts.html" class="btn btn-outline-primary w-100 mt-2">View All Products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline-primary rounded-pill me-2" id="loginBtn">Login</a>
+          <a href="register.html" class="btn btn-outline-success rounded-pill" id="registerBtn">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar-spacer"></div>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="container  m-auto">
+    <h1 class="text-center my-5">Cart Products</h1>
+    <div class="row product-list  m-auto" id="checkout_items">
+      <!-- <div class="checkout-item-inner-box d-flex align-items-center juistfiy-content-spacebetwen ">
+        <img src="images/product-01.jpg" alt="" class="img-fluid">
+
+        <div class="checkout-info-inner-box">
+          <h2>${item.name}</h2>
+          <div>
+            <button class="Quantity-decrease" data-index="${index}">-</button>
+            <span class="Quantity">${item.quantity}</span>
+            <button class="Quantity-increase" data-index="${index}">+</button>
+          </div>
+          <p class="Price">$${total_Price_item}</p>
+          <button href="#" class="btn btn-danger rounded-pill" data-index="${index}">remove fromcart</button>
+        </div>
+
+      </div> -->
+    </div>
+
+    <div class="row total_price_cont text-center container m-auto my-5">
+      <h2 class="total_price_h2 text-center text-uppercase">total price <p class="d-inline " id="total_price_p"></p>
+      </h2>
+    </div>
+
+    <div class="row favorite_product">
+      <h2 class="favorite_product_h2 text-center">Favorite Products</h2>
+      <div class="container m-auto py-5">
+      <div class="favorite_product_list">
+          
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- bootstrap js start -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap js end -->
+  <!-- start google fonts -->
+  <!-- <script src="js/all.min.js"></script> -->
+  <!-- end google fonts -->
+<!--  <script src="js/items.js"></script>-->
+  <!-- script js start -->
+  <script src="js/script.js"></script>
+  <!-- script js end -->
+  <!-- <script src="js/carts.js"></script> -->
+</body>
+
+</html>

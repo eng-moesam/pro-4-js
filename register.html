@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap end -->
+    <!-- font awsome start -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- font awsome end -->
+    <!-- start google font -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- end google font -->
+    <!-- style css start -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- style css end -->
+</head>
+
+<body>
+      
+    <!-- navbar -->
+       <nav class="navbar fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo-01.png" alt="" class="img-fluid">
+    </a>
+    
+    <div class="d-flex align-items-center">
+     
+    </div>
+  </div>
+</nav>
+<div class="navbar-spacer"></div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="register-section">
+    <div class="container p-2 m-auto ">
+         
+        <div class="w-90 m-auto p-4 shadow-sm bg-white rounded">
+            <h2 class="text-center">Register</h2>
+            <div class="mb-3 row">
+                <div class="col-md-6 col-lg-6 p-2">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" required>
+                </div>
+                <div class="col-md-6 col-lg-6 p-2">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-12 col-lg-12 p-2">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email_register" name="email" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-12 col-lg-12 p-2">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password_register" name="password" required>
+                </div>
+            </div>
+
+                <button type="submit" class="btn btn-primary rounded-pill text-uppercase m-auto" id="registerSubmitBtn">Register</button>
+                <a href="login.html" class="d-block text-center mt-3">Do you have an account? Login</a>
+            </form>
+        </div>
+    </div>
+ </div>
+ <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- bootstrap js start -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap js end -->
+    <!-- start google fonts -->
+    <!-- <script src="js/all.min.js"></script> -->
+    <!-- end google fonts -->
+    <!-- script js start -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- script js end -->
+     <script src="js/register.js"></script>
+</body>
+
+</html>

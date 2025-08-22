@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <!-- bootstrap start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- bootstrap end -->
+  <!-- font awsome start -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- font awsome end -->
+  <!-- start google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- end google font -->
+  <!-- style css start -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- style css end -->
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-01.png" alt="" class="img-fluid">
+      </a>
+      <div class="ms-auto d-flex align-items-center">
+        <a href="#" id="logout" class="mx-2 btn btn-outline-danger rounded-pill order-2">Log Out</a>
+        <div id="user_info" class="ms-auto">
+          <a href="#" id="user" class="text-uppercase text-black text-decoration-none order-1 mx-2"></a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="cart-wrapper me-4">
+            <div class="cart-icon position-relative">
+              <i class="fas fa-cart-shopping text-dark fs-3"></i>
+              <span
+                class="badge bg-danger rounded-circle position-absolute fs-5 "></span>
+              <div class="carts_products">
+                <div class="cart-items">
+
+                </div>
+                <a href="cartProducts.html" class="btn btn-outline-primary w-100 mt-2">View All Products</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline-primary rounded-pill me-2" id="loginBtn">Login</a>
+            <a href="register.html" class="btn btn-outline-success rounded-pill" id="registerBtn">Register</a>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </nav>
+  <!-- <div class="navbar-spacer"></div> -->
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="section1 ">
+    <div class="container py-5 m-auto text-center">
+      <div class="row p-3">
+        <div class="col-md-3 col-lg-3 p-2">
+          <select class="form-select" id="searchType">
+            <option class="option-1" value="name">Search by name</option>
+            <option class="option-2" value="category">Search by category</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-lg-6 p-2">
+          <input type="search" class="form-control" id="searchInput" placeholder="Search...">
+        </div>
+        <div class="col-md-2 col-lg-2 p-2 ms-2">
+          <button class="btn btn-outline-primary w-100" id="searchButton">Search</button>
+        </div>
+      </div>
+      <div class="row py-5 products ">
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
