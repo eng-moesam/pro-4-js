@@ -3,7 +3,7 @@ let product=[
         id: 1,
         name: "Ruffle Shirt",
         price: 99.99,
-        description: "Premuin clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-01.jpg"
     },
@@ -11,7 +11,7 @@ let product=[
         id: 2,
         name: "Herschel supply",
         price: 89.99,
-        description: "Premuin clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-02.jpg"
     },
@@ -19,7 +19,7 @@ let product=[
         id: 3,
         name: "Check Trouser",
         price: 79.99,
-        description: "Premuin clothes",
+        description: "Men clothes",
         category: "Men",
         image: "images/product-03.jpg"
     }
@@ -27,7 +27,7 @@ let product=[
         id:4,
         name: "Classic Coat",
         price: 69.99,
-        description: "Premuin clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-04.jpg"
     }
@@ -35,7 +35,7 @@ let product=[
         id:5,
         name: "Pocket Jumper",
         price: 59.99,
-        description: "Premuin clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-05.jpg"
     },
@@ -43,7 +43,7 @@ let product=[
         id:6,
         name: "Inspired Classic",
         price: 49.99,
-        description: "Premiun watch",
+        description: " watch",
         category: "watch",
         image: "images/product-06.jpg"
     }
@@ -51,7 +51,7 @@ let product=[
         id:7,
         name: "Shirt in Cotton",
         price: 39.99,
-        description: "Premiun clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-07.jpg"
     }
@@ -59,14 +59,14 @@ let product=[
         id:8,
         name: "Pieces Printed",
         price: 29.99,
-        description: "Premiun clothes",
+        description: "woman clothes",
         category: "woman",
         image: "images/product-08.jpg"
     },{
         id:9,
         name: "Converse All Star",
         price: 19.99,
-        description: "Premiun Accessories",
+        description: "Shoes",
         category: "shoes",
         image: "images/product-09.jpg"
     }
@@ -109,7 +109,7 @@ function drawItems(){
     `;
     allProducts.innerHTML += productCard;
 })
-        addEventListenersToButtons();
+        // addEventListenersToButtons();
 
     }
 
