@@ -142,7 +142,7 @@ function addtofavorite(productItem) {
     if (localStorage.getItem("email")) {
         let favorite = JSON.parse(localStorage.getItem("favorite")) || [];
 
-        // تحقق مما إذا كان المنتج موجودًا بالفعل في المفضلة لتجنب التكرار
+         
         const isAlreadyInFavorite = favorite.some(item => item.id === productItem.id);
 
         if (!isAlreadyInFavorite) {
@@ -150,7 +150,7 @@ function addtofavorite(productItem) {
             localStorage.setItem("favorite", JSON.stringify(favorite));
             // console.log(`Added ${productItem.name} to favorites`);
 
-            // تحديث حالة أزرار المفضلة فقط
+            
             const allFavoriteButtons = document.querySelectorAll(`.add_to_favorite[data-id="${productItem.id}"]`);
             allFavoriteButtons.forEach(btn => {
                 btn.classList.add("text-danger");
@@ -184,7 +184,7 @@ function updateFavorite() {
 
     });
 
-    // إضافة مستمعات الأحداث لأزرار الحذف
+    
     const removeButtons = document.querySelectorAll(".remove-favorite");
     removeButtons.forEach(button => {
         button.addEventListener("click", (event) => {
@@ -194,23 +194,23 @@ function updateFavorite() {
     });
 }
 updateFavorite()
-// دالة جديدة للحذف بناءً على index
+
 function removeFromFavoritesByIndex(index) {
     let favorite = JSON.parse(localStorage.getItem("favorite")) || [];
 
-    // احفظ معرف المنتج قبل حذفه من المصفوفة للاستخدام لاحقًا
+   
     const productId = favorite[index].id;
 
-    // حذف العنصر من المصفوفة بناءً على index
+    
     favorite.splice(index, 1);
 
-    // تحديث التخزين المحلي
+    
     localStorage.setItem("favorite", JSON.stringify(favorite));
 
-    // تحديث واجهة المستخدم
+    
     updateFavorite();
 
-    // تحديث حالة أزرار المفضلة في الواجهة
+    
     const allFavoriteButtons = document.querySelectorAll(`.add_to_favorite[data-id="${productId}"]`);
     allFavoriteButtons.forEach(btn => {
         btn.classList.remove("text-danger");
